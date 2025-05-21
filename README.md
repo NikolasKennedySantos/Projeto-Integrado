@@ -1,5 +1,3 @@
-# Projeto-Integrado
-Programa de cadastramento de alunos
 from datetime import datetime
 import json
 import os
@@ -7,8 +5,12 @@ import os
 # Coleta de dados
 nome = input("Digite seu nome: ").strip().title()
 cpf = input("Digite seu CPF: ").strip()
+nome_do_responsavel = input("Digite o nome do responsável: ").strip
 uf = input("Digite a UF (estado): ").strip().upper()
 cidade = input("Digite a cidade: ").strip().title()
+endereco = input("Digite seu endereço: ").strip()
+e_mail = input("Digite seu e-mail: ").strip()
+telefone = input("Digite o telefone: ").strip
 
 # Validação da data de nascimento
 while True:
@@ -23,9 +25,13 @@ while True:
 dados_usuario = {
     "nome": nome,
     "cpf": cpf,
+    "nome do responsavel": nome_do_responsavel,
     "data_nascimento": data_nascimento,
     "uf": uf,
-    "cidade": cidade
+    "cidade": cidade,
+    "endereço": endereco,
+    "e-mail": e_mail,
+    "telefone": telefone
 }
 
 # Caminho do arquivo
